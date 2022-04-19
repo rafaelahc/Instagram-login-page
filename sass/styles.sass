@@ -1,0 +1,193 @@
+@use 'base-mixins'
+    
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: Helvetica
+    background-color: #FAFAFA
+
+#main-container
+    display: flex
+    flex-direction: row
+    margin-top: 25px
+
+    @include base-mixins.mobile
+        margin-top: 0
+
+    #banner-container
+        width: 50%
+        text-align: right
+
+        @include base-mixins.mobile
+            display: none
+           
+
+#form-container
+    text-align: center
+    width: 50%
+
+    @include base-mixins.mobile
+        width: 100%
+        border: none
+
+    #form-box
+        background-color: #fff
+        border: 1px solid #DBDBDB
+        width: 350px
+        margin-top: 30px
+
+        @include base-mixins.mobile
+            margin-top: 0
+            width: 100%
+            border: none
+
+        #logo-insta
+            width: 175px
+            height: 51px
+            margin: 30px auto 12px
+            background-color: #FFF
+
+        #login-form
+            margin-top: 20px
+
+            input
+                display: block
+                font-size: 12px 
+                padding: 12px 9px
+                background-color: #FAFAFA
+                border: 1px solid #DBDBDB
+                border-radius: 3px
+                width: 268px
+                margin: 5px auto
+
+            input[type="submit"]
+                background-color: #B2DFFC
+                color: #fff
+                margin-top: 15px
+                border-radius: 5px  
+                border-color: #B2DFFC
+                height: 30px
+                font-size: 13px
+                padding: 0
+                font-weight: bold
+
+        .separator
+            position: relative
+
+            .line
+                border-top: 1px solid #DBDBDB
+                width: 268px
+                margin: 25px auto 35px auto
+            
+            span
+                position: absolute
+                text-transform: uppercase
+                color: #bbb
+                top: -6px
+                width: 50px
+                left: 50%
+                margin-left: -25px
+                font-size: 14px
+
+        #facebook-login
+            margin-bottom: 25px
+
+            a
+                text-decoration: none
+                color: #385185
+                display: flex
+                align-items: center
+                justify-content: center
+
+                img
+                    width: 16px
+                    height: 16px
+                    margin-right: 8px
+
+                span
+                    font-weight: bold
+                    font-size: 13px
+                    margin-top: 1px
+
+        #forgot-pass
+            margin-bottom: 20px
+            font-size: 12px
+
+            a
+                text-decoration: none
+                color: #00376b
+
+    #register-container
+        background-color: #FFF
+        border: 1px solid #DBDBDB
+        width: 350px
+        margin-top: 10px
+        padding: 25px
+
+        @include base-mixins.mobile
+            width: 100%
+            border: none
+
+        p
+            font-size: 14px
+            color: #262626
+
+            a
+                color: #4A95F6
+                font-weight: bold
+                text-decoration: none
+    
+    #get-app-container
+        text-align: center
+        width: 350px
+
+        @include base-mixins.mobile
+            width: 100%
+            border: none
+
+        p
+            margin: 20px 0
+            font-size: 13px
+
+        a
+            text-decoration: none
+
+            img
+                width: 136px
+                height: 40px
+
+footer  
+    width: 1000px
+    max-width: 49%
+    margin: 50px auto
+
+    @include base-mixins.mobile
+        width: 90%
+        
+
+    nav
+        display: inline-block
+
+        .footer-links
+            list-style-type: none
+            text-align: center
+
+            li
+                display: inline-block
+                margin-right: 10px
+
+                @include base-mixins.mobile
+                    margin-bottom: 10px
+
+                a
+                    text-decoration: none
+                    color: #8e8e8e
+                    font-size: 12px
+
+    
+    #copyright 
+        font-size: 12px
+        color: #8e8e8e
+        margin-top: 20px
+        text-align: center
